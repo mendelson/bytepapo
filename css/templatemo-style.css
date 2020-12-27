@@ -30,6 +30,10 @@ a:focus {
   outline: none;
 }
 
+img.logo {
+  border-radius: 50%;
+}
+
 .regular-item {
   color: #8f8f8f;
 }
@@ -37,6 +41,15 @@ a:focus {
 .regular-item:hover {
   font-weight: bold;
   color: #8f8f8f;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.col-lg-4 {
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 /* h2 i {
@@ -51,8 +64,13 @@ a:focus {
   background-color: #ced4da;
 }
 
+footer {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
 .tm-section-pad-top {
-  padding-top: 135px;
+  padding-top: 80px;
 }
 
 .tm-text-primary {
