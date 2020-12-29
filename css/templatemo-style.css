@@ -69,6 +69,10 @@ footer {
   padding-bottom: 20px;
 }
 
+.description {
+  display: none;
+}
+
 .tm-section-pad-top {
   padding-top: 80px;
 }
@@ -367,7 +371,7 @@ footer {
 }
 
 .grid figure h2 span {
-  font-weight: 800;
+  font-weight: 400;
 }
 
 .grid figure h2,

@@ -81,7 +81,7 @@
           <div class="text-center col-12">
               <h2 class="tm-text-primary tm-section-title mb-4">Episódios</h2>
               <p>
-                Veja abaixo a lista com os nossos episódios, dos mais recentes até os mais antigos.
+                Veja abaixo a lista com os nossos episódios, dos mais recentes até os mais antigos. Selecione para visualizar informações extras!
               </p>
           </div>
         </div>
@@ -89,75 +89,62 @@
             <div class="col-12">
                 <div class="mx-auto tm-gallery-container">
                     <div class="grid tm-gallery">
-                      <a href="https://open.spotify.com/episode/3H9audFjrpRtgCgE2Eaz98?si=u0FTb384SpO8CddOB18Ncg" target="_blank">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>001.00001: <span>Nasser Boan</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-02.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Second <span>Honey</span> Now</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-03.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-03.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Third <span>Honey</span> Now</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-04.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-04.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Dreamy <span>Honey</span> Now</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-05.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-05.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Fifth <span>Honey</span> Now</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-06.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-06.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Sixth <span>Honey</span> Now</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-01.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Dreamy <span>Honey</span> Now</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-02.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Image" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Eighth <span>Honey</span> Now</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
+                      <!-- Nasser Boan -->
+                      <figure class="effect-honey tm-gallery-item" onclick="show_description('Nasser_Boan');">
+                        <img src="img/gallery-tn-01.jpg" alt="Image" class="img-fluid">
+                        <figcaption>
+                          <h2><i><span>Nasser Boan</span></i></h2>
+                        </figcaption>
+                      </figure>
+                      <!-- Aurora Li Min -->
+                      <figure class="effect-honey tm-gallery-item" onclick="show_description('Aurora_Li_Min');">
+                        <img src="img/gallery-tn-02.jpg" alt="Image" class="img-fluid">
+                        <figcaption>
+                          <h2><i><span>Aurora Li Min</span></i></h2>
+                        </figcaption>
+                      </figure>
+                      <!-- Arthur Pieri -->
+                      <figure class="effect-honey tm-gallery-item" onclick="show_description('Arthur_Pieri');">
+                        <img src="img/gallery-tn-02.jpg" alt="Image" class="img-fluid">
+                        <figcaption>
+                          <h2><i><span>Arthur Pieri</span></i></h2>
+                        </figcaption>
+                      </figure>
+                      <!-- Cristiana de Freitas -->
+                      <figure class="effect-honey tm-gallery-item" onclick="show_description('Cristiana_de_Freitas');">
+                        <img src="img/gallery-tn-02.jpg" alt="Image" class="img-fluid">
+                        <figcaption>
+                          <h2><i><span>Cristiana de Freitas</span></i></h2>
+                        </figcaption>
+                      </figure>
+
                     </div>
                 </div>
             </div>
           </div>
       </div>
+
+      <!-- Episodes' descriptions -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p id="Nasser_Boan" class="description mb-4 tm-intro-text text-justify">
+              Texto para o Nasser
+            </p>
+            <p id="Aurora_Li_Min" class="description mb-4 tm-intro-text text-justify">
+              Texto para a Aurora
+            </p>
+            <p id="Arthur_Pieri" class="description mb-4 tm-intro-text text-justify">
+              Texto para o Arthur
+            </p>
+            <p id="Cristiana_de_Freitas" class="description mb-4 tm-intro-text text-justify">
+              Texto para a Cristiana
+            </p>
+          </div>
+        </div>
+      </div>
+
+
     </section>
 
     <section id="links" class="tm-section-pad-top">
@@ -228,6 +215,17 @@
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
+      function show_description(id) {
+        var e = document.getElementById(id);
+        var all_descriptions = document.getElementsByClassName('description');
+
+        // Hide all descriptions
+        for (var i = 0; i < all_descriptions.length; i += 1){
+          all_descriptions[i].style.display = 'none';
+        }
+
+        e.style.display = 'block' // Show only desired description
+      }
 
       function getOffSet(){
         var _offset = 450;
