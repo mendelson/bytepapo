@@ -110,11 +110,11 @@
                           <h2><i><span>Arthur Pieri</span></i></h2>
                         </figcaption>
                       </figure>
-                      <!-- Cristiana de Freitas -->
-                      <figure class="effect-honey tm-gallery-item" onclick="show_description('Cristiana_de_Freitas');">
+                      <!-- Cristiana de Farias -->
+                      <figure class="effect-honey tm-gallery-item" onclick="show_description('Cristiana_de_Farias');">
                         <img src="img/gallery-tn-02.jpg" alt="Image" class="img-fluid">
                         <figcaption>
-                          <h2><i><span>Cristiana de Freitas</span></i></h2>
+                          <h2><i><span>Cristiana de Farias</span></i></h2>
                         </figcaption>
                       </figure>
 
@@ -137,8 +137,17 @@
             <p id="Arthur_Pieri" class="description mb-4 tm-intro-text text-justify">
               Texto para o Arthur
             </p>
-            <p id="Cristiana_de_Freitas" class="description mb-4 tm-intro-text text-justify">
-              Texto para a Cristiana
+            <p id="Cristiana_de_Farias" class="description mb-4 tm-intro-text text-justify">
+              Cristiana é Doutoranda no Extreme Robotics Laboratory na Universidade de Birmingham (Inglaterra) onde trabalha com técnicas probabilísticas de manipulação robótica.
+              <ul id="links_Cristiana_de_Farias" class="description">
+              	<li><a href="https://cristianafarias.com/">Site pessoal da Cristiana</a></li>
+              	<li><a href="https://www.instagram.com/robo.cris/">Instagram da Cristiana sobre robótica</a></li>
+              	<li><a href="https://instagram.com/unbeatablesbr/">Instagram da UnBeatables</a></li>
+              	<li><a href="http://duerer.usc.edu/mailman/listinfo.cgi/robotics-worldwide">Uma lista de e-mails de robótica</a></li>
+              	<li><a href="https://www.eu-robotics.net/eurobotics/newsroom/mailing-list/index.html">Outra lista de e-mails de robótica</a></li>
+              	<li><a href="https://nccr-robotics.ch/students-academics/masters-internships-for-women/">Estágio para mulheres na Suíça em robótica</a></li>
+              	<li><a href="https://www.chevening.org">Programa Chevening</a></li>
+              </ul>
             </p>
           </div>
         </div>
@@ -217,6 +226,8 @@
     <script>
       function show_description(id) {
         var e = document.getElementById(id);
+        var links_id = "links_" + id;
+        var links = document.getElementById(links_id);
         var all_descriptions = document.getElementsByClassName('description');
 
         // Hide all descriptions
@@ -224,7 +235,8 @@
           all_descriptions[i].style.display = 'none';
         }
 
-        e.style.display = 'block' // Show only desired description
+        e.style.display = 'block'; // Show only desired description
+        links.style.display = 'block';
       }
 
       function getOffSet(){
