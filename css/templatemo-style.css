@@ -104,7 +104,7 @@ footer {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: red; /* <===== ALTERAR AQUI A COR DO FUNDO DO MENU!!!!! */
+  background-color: #090032; /* <===== ALTERAR AQUI A COR DO FUNDO DO MENU!!!!! */
   transition: all 0.3s ease;
 }
 
