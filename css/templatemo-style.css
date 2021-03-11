@@ -11,7 +11,8 @@ html {
 }
 
 body {
-  color: #8f8f8f; /* <===== ALTERAR AQUI A COR DAS LETRAS DOS TEXTOS!!!!! */
+  color: #ffffff; /* <===== ALTERAR AQUI A COR DAS LETRAS DOS TEXTOS!!!!! */
+  /*color: #8f8f8f; */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -35,12 +36,15 @@ a:focus {
 } */
 
 .regular-item {
-  color: #8f8f8f;
+  color: #ffffff;
+  text-decoration: underline;
+
 }
 
 .regular-item:hover {
   font-weight: bold;
-  color: #8f8f8f;
+  text-decoration: underline;
+  color: #ffd46e;
 }
 
 .text-justify {
@@ -78,7 +82,9 @@ footer {
 }
 
 .tm-text-primary {
-  color: #3496d8; /* <===== ALTERAR AQUI A COR DOS TÍTULOS DAS SESSÕES!!!!! */
+  color: #d27441; /* <===== ALTERAR AQUI A COR DOS TÍTULOS DAS SESSÕES!!!!! */
+  /*color: #cf7342; */
+  /*color: #3496d8;*/
 }
 
 .tm-font-big {
@@ -144,7 +150,7 @@ footer {
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
-  color: #3496d8;
+  color: #ffd46e; /* <===== ALTERAR AQUI A COR DO HOVER DO MENU!!!!! */
 }
 
 .navbar-toggler {
@@ -269,7 +275,12 @@ footer {
 .tm-icon {
   display: block;
   margin-bottom: 55px;
-  color: #3496d8;
+  color: #ffd46e; /* <===== ALTERAR AQUI A COR DOS ÍCONES DO FIM DA PÁGINA!!!!! */
+  /*color: #3496d8;*/
+}
+
+.text-subtitle{
+  color: #ffd46e !important; /* <===== ALTERAR AQUI A COR DOS SUBTÍTULOS DOS ÍCONES DO FIM DA PÁGINA!!!!! */
 }
 
 /* Work */
@@ -301,7 +312,7 @@ footer {
 .slick-dots li button:focus:before,
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: #3ba0dd;
+  color: #95552e; /* <===== ALTERAR AQUI A COR DA BOLINHA SELECIONADA DAS IMAGENS!!!!! */
 }
 
 .slick-dots li button:before {
@@ -409,7 +420,7 @@ figure.effect-honey figcaption::before {
   left: 0;
   width: 100%;
   height: 10px;
-  background: #3496d8;
+  background: #ffd46e; /* <===== ALTERAR AQUI A COR DAS BARRAS NO HOVER DAS IMAGENS!!!!! */
   content: "";
   -webkit-transform: translate3d(0, 10px, 0);
   transform: translate3d(0, 10px, 0);
