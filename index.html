@@ -10,6 +10,13 @@
       gtag('js', new Date());
 
       gtag('config', 'G-YN2VH4PZBP');
+
+      function pix() {
+        var pixText = document.getElementById("pixText");
+        var pixKey = document.getElementById("pixKey");
+        pixText.style.display = "none"
+        pixKey.style.display = "block";
+      }
     </script>
 
     <meta charset="UTF-8" />
@@ -237,17 +244,32 @@
         </div>
 
         <div class="col-lg-4 mt-5 mt-lg-0">
-          <i class="fas fa-4x fa-hand-holding-usd text-center tm-icon"></i>
+          <i class="fas fa-4x fa-hands-helping text-center tm-icon"></i>
           <h4 class="text-center tm-text-primary mb-4 text-subtitle">Apoie nosso trabalho</h4>
           <p class="text-justify">
-            Caso deseje nos apoiar, consulte algumas possibilidades <a class="regular-item" href="https://www.catarse.me/bytepapo" target="_blank">aqui</a>.
+            Além de nos apoiar nos seguindo no seu reprodutor de Podcasts favorito, você também pode nos apoiar das seguintes formas:
+            <ul class="fa-ul">
+              <li>
+                <span class="fa-li">
+                  <i class="fas fa-hand-holding-usd"></i>
+                </span>
+                Doando qualquer valor através da nossa chave aleatória PIX <span id="pixText" style="text-decoration:underline" onclick="pix()">clicando aqui.</span><span id="pixKey" style="display:none; color:#ffd46e"> 12633a08-24fe-4f16-978c-045cfb4ffa14</span>
+              </li>
+              </br>
+              <li>
+                <span class="fa-li">
+                  <i class="fas fa-user-plus"></i>
+                </span>
+                Aderindo ao nosso plano de assinaturas mensais <a class="regular-item" href="https://www.catarse.me/bytepapo" target="_blank">aqui</a>.
+              </li>
+            </ul>
           </p>
         </div>
         <div class="col-lg-4 mt-5 mt-lg-0">
           <i class="fas fa-4x fa-id-card text-center tm-icon"></i>
           <h4 class="text-center tm-text-primary mb-4 text-subtitle">Contato</h4>
           <p class="text-justify">
-            Deseja realizar parcerias ou entrar em contato sobre outros assuntos? Nos mande um e-mail para mendelson.mateus at gmail.com ou procure pelo usuário @mmendelson no aplicativo de mensagens Telegram.
+            Deseja realizar parcerias ou entrar em contato sobre outros assuntos? Nos mande um e-mail para bytepapo.podcast arroba gmail.com ou procure pelo usuário @mmendelson no aplicativo de mensagens Telegram.
           </p>
         </div>
       </div>
