@@ -150,7 +150,7 @@ footer {
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
-  color: #ffd46e; /* <===== ALTERAR AQUI A COR DO HOVER DO MENU!!!!! */
+  color: #d27441; /* <===== ALTERAR AQUI A COR DO HOVER DO MENU!!!!! */
 }
 
 .navbar-toggler {
@@ -383,6 +383,10 @@ footer {
 
 .grid figure h2 span {
   font-weight: 400;
+}
+
+.grid figure h2 i span {
+  font-size: 1.5rem;
 }
 
 .grid figure h2,
