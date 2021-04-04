@@ -75,6 +75,7 @@ footer {
 
 .description {
   display: none;
+  padding-top: 30px;
 }
 
 .tm-section-pad-top {
@@ -462,4 +463,29 @@ figure.effect-honey:hover h2 i {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+}
+
+.carousel-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+
+.carousel-indicators {
+    bottom: -30px;
+}
+
+.carousel-caption {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+#episodes-list {
+  padding-top: 100px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  padding-top: 100px;
 }
