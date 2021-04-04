@@ -20,7 +20,7 @@
     </script>
 
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Byte Papo</title>
     <script src="https://kit.fontawesome.com/325b0004ef.js" crossorigin="anonymous"></script>
@@ -315,6 +315,26 @@
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
+        $('.carousel').on('touchstart', function(event) {
+            const xClick = event.originalEvent.touches[0].pageX;
+            $(this).one('touchmove', function(event){
+                const xMove = event.originalEvent.touches[0].pageX;
+                const sensitivityInPx = 5;
+
+                if( Math.floor(xClick - xMove) > sensitivityInPx ){
+                    $(this).carousel('next');
+                    hide_all_descriptions()
+                }
+                else if( Math.floor(xClick - xMove) < -sensitivityInPx ){
+                    $(this).carousel('prev');
+                    hide_all_descriptions()
+                }
+            });
+            $(this).on('touchend', function(){
+                $(this).off('touchmove');
+            });
+        });
+
       function hide_all_descriptions() {
         // Hide all descriptions
         var all_descriptions = document.getElementsByClassName('description');
