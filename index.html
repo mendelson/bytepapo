@@ -142,52 +142,9 @@
         <div class="row">
           <div class="col-lg-12">
             <!-- Alexandre Zaghetto -->
-            <p id="Alexandre_Zaghetto" class="description mb-4 tm-intro-text text-justify">
-              Neste episódio, Alexandre Zaghetto conta sua história de vida desde sua infância até chegar na Sony do Vale do Silício. Já se perguntou como o tio da Kombi chegou até o Vale do Silício? Coloque seu fone de ouvido, pegue um lanchinho leve e venha nessa viagem!</br>
-              </br>
-              <iframe loading="lazy" src="https://open.spotify.com/embed-podcast/episode/1Bwn8iMBnNvOVmg7CKjqR0" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-              _____
-              <ul id="members_Alexandre_Zaghetto" class="description">
-                <li>Apresentação: Mateus Mendelson</li>
-                <li>Convidado: Alexandre Zaghetto</li>
-                <li>Edição: Randi Maldonado</li>
-              </ul>
-
-              <p id="links_title_Alexandre_Zaghetto" class="description">
-                _____</br>
-                </br>
-                Links úteis:</br>
-              </p>
-              <ul id="links_Alexandre_Zaghetto" class="description">
-                <li><a class="regular-item" href="https://www.linkedin.com/in/zaghetto/" target="_blank">LinkedIn do Alexandre</a></li>
-                <li><a class="regular-item" href="http://alexandre.zaghetto.com/" target="_blank">Site pessoal do Alexandre</a></li>
-                <li><a class="regular-item" href="https://www.youtube.com/watch?v=PL6wD8jczkE" target="_blank">Que negócio é esse de Point Cloud?</a></li>
-                <li><a class="regular-item" href="https://www.saudebusiness.com/hospital/voc-sabe-como-surgiu-o-vale-do-silcio" target="_blank">Fonte das curiosidades</a></li>
-              </ul>
-            </p>
+            <script src="descriptions/Alexandre_Zaghetto.js"></script>
             <!-- Nasser Boan -->
-            <p id="Nasser_Boan" class="description mb-4 tm-intro-text text-justify">
-              Neste episódio, Nasser Boan compartilha sua trajetória profissional, que é um tanto quanto improvável. Tendo uma formação acadêmica inicial totalmente desconexa com a ciência de dados, essa história é cheia de curiosidades. Coloque seu fone de ouvido, pegue um lanchinho leve e veja como uma brusca mudança de área pode alavancar uma carreira!</br>
-              </br>
-              <iframe loading="lazy" src="https://open.spotify.com/embed-podcast/episode/6xxQ3raQLhWvsO3Ocolh6x" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-              _____
-              <ul id="members_Nasser_Boan" class="description">
-                <li>Apresentação: Mateus Mendelson</li>
-                <li>Convidado: Nasser Boan</li>
-                <li>Edição: Randi Maldonado</li>
-              </ul>
-
-              <p id="links_title_Nasser_Boan" class="description">
-                _____</br>
-                </br>
-                Links úteis:</br>
-              </p>
-              <ul id="links_Nasser_Boan" class="description">
-                <li><a class="regular-item" href="https://www.linkedin.com/in/nasser-boan-2b264a85/" target="_blank">LinkedIn do Nasser</a></li>
-              </ul>
-            </p>
+            <script src="descriptions/Nasser_Boan.js"></script>
             <!-- Aurora Li Min --->
             <p id="Aurora_Li_Min" class="description mb-4 tm-intro-text text-justify">
               Texto para a Aurora
@@ -342,11 +299,6 @@
         for (var i = 0; i < all_descriptions.length; i += 1){
           all_descriptions[i].style.display = 'none';
         }
-
-        // e.style.display = 'block'; // Show only desired description
-        // links.style.display = 'block';
-        // members.style.display = 'block';
-        // links_title.style.display = 'block';
       }
 
       function show_description(id) {
@@ -354,20 +306,26 @@
         var links_id = "links_" + id;
         var members_id = "members_" + id
         var links_title_id = "links_title_" + id
+        var line_1_id = "line_1_" + id
+        var line_2_id = "line_2_" + id
         var links = document.getElementById(links_id);
         var members = document.getElementById(members_id);
         var links_title = document.getElementById(links_title_id);
+        var line_1 = document.getElementById(line_1_id)
+        var line_2 = document.getElementById(line_2_id)
         var all_descriptions = document.getElementsByClassName('description');
 
         // Hide all descriptions
         for (var i = 0; i < all_descriptions.length; i += 1){
-          all_descriptions[i].style.display = 'none';
+            all_descriptions[i].style.display = 'none';
         }
 
         e.style.display = 'block'; // Show only desired description
         links.style.display = 'block';
         members.style.display = 'block';
         links_title.style.display = 'block';
+        line_1.style.display = 'block'
+        line_2.style.display = 'block'
       }
 
       function getOffSet(){
@@ -393,127 +351,6 @@
           bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
         $object.css({"background-position" : bg_css });
       }
-
-      // Parallax function
-      // Adapted based on https://codepen.io/roborich/pen/wpAsm
-      var background_image_parallax = function($object, multiplier, forceSet){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        // $object.css({"background-attatchment" : "fixed"});
-
-        if(forceSet) {
-          setParallaxPosition($doc, multiplier, $object);
-        } else {
-          $(window).scroll(function(){
-            setParallaxPosition($doc, multiplier, $object);
-          });
-        }
-      };
-
-      var background_image_parallax_2 = function($object, multiplier){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        $object.css({"background-attachment" : "fixed"});
-        $(window).scroll(function(){
-          var firstTop = $object.offset().top,
-              pos = $(window).scrollTop(),
-              yPos = Math.round((multiplier * (firstTop - pos)) - 186);
-
-          var bg_css = 'center ' + yPos + 'px';
-
-          $object.css({"background-position" : bg_css });
-        });
-      };
-
-      $(function(){
-        // Hero Section - Background Parallax
-        background_image_parallax($(".tm-parallax"), 0.30, false);
-        background_image_parallax_2($("#contact"), 0.80);
-
-        // Handle window resize
-        window.addEventListener('resize', function(){
-          background_image_parallax($(".tm-parallax"), 0.30, true);
-        }, true);
-
-        // Detect window scroll and update navbar
-        $(window).scroll(function(e){
-          if($(document).scrollTop() > 120) {
-            $('.tm-navbar').addClass("scroll");
-          } else {
-            $('.tm-navbar').removeClass("scroll");
-          }
-        });
-
-        // Close mobile menu after click
-        $('#tmNav a').on('click', function(){
-          $('.navbar-collapse').removeClass('show');
-        })
-
-        // Scroll to corresponding section with animation
-        $('#tmNav').singlePageNav();
-
-        // Add smooth scrolling to all links
-        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 400, function(){
-              window.location.hash = hash;
-            });
-          } // End if
-        });
-
-        // Pop up
-        // $('.tm-gallery').magnificPopup({
-        //   delegate: 'a',
-        //   type: 'image',
-        //   gallery: { enabled: true }
-        // });
-
-        // Gallery
-        $('.tm-gallery').slick({
-          dots: true,
-          infinite: false,
-          slidesToShow: 5,
-          slidesToScroll: 2,
-          responsive: [
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-        });
-      });
     </script>
   </body>
 </html>

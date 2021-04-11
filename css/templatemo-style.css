@@ -489,3 +489,10 @@ figure.effect-honey:hover h2 i {
 .carousel-control-next, .carousel-control-prev {
   padding-top: 100px;
 }
+
+hr {
+  border: 0;
+  background-color: white;
+  height: 1px;
+  padding-top: 0px !important;
+}
