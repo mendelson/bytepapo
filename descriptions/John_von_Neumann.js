@@ -4,7 +4,7 @@ document.write(`
     <p id="${id}" class="description mb-4 tm-intro-text text-justify">
         Neste episódio, apresentamos a história de John von Neumann, matemático húngaro de origem judaica de grande destaque no mundo da computação. Separe um byte de minutos do seu dia e venha conosco no quadro Uma Byta História!</br>
         </br>
-        Confira o texto adaptado deste episódio <a class="regular-item" href="bytahistoria/${id}.html" onclick="gtag('event', 'Ver texto ep ${id}');">aqui</a>.</br>
+        Confira o texto adaptado deste episódio <a class="regular-item" href="bytahistoria/${id}.html" onclick="gtag('event', 'Ver texto ep ${id}');" target="_blank">aqui</a>.</br>
         </br>
         <iframe loading="lazy" src="https://open.spotify.com/embed-podcast/episode/69iKJzkDgdgqbfdJFGZjw3" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </p>
