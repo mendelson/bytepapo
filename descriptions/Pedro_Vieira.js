@@ -2,7 +2,7 @@ var id = 'Pedro_Vieira';
 
 document.write(`
     <p id="${id}" class="description mb-4 tm-intro-text text-justify">
-        Neste episódio, Pedro Vieira conta uma longa caminhada desde sua juventude regada a tecnologia (sendo um dos 100 primeiros usuários da internet no Brasil), passando por publicações na NASA até chegar à Petrobrás. Coloque seu fone de ouvido, pegue um lanchinho leve e venha nessa viagem!</br>
+        Neste episódio, Pedro Vieira conta uma longa caminhada desde sua juventude regada a tecnologia (sendo um dos 100 primeiros usuários da internet no Brasil), passando por publicações na NASA até chegar à Petrobras. Coloque seu fone de ouvido, pegue um lanchinho leve e venha nessa viagem!</br>
         </br>
         <iframe src="https://open.spotify.com/embed/episode/0z0c3w2jYcEaiMqQDuV0zx" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </p>
