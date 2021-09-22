@@ -3,7 +3,7 @@ var notion_url = 'https://pool-patient-050.notion.site/Walter-Pitts-4b2af1108cc2
 
 document.write(`
     <p id="${id}" class="description mb-4 tm-intro-text text-justify">
-        Neste episódio, apresentamos a história de Walter Pitts, ex-morador de rua que se tornou pesquisador no MIT e foi a primeira pessoa a modelar uma rede neural artificial. Separe um byte de minutos do seu dia e venha conosco no quadro Uma Byta História!</br>
+        Neste episódio, apresentamos a história de Walter Pitts, ex-morador de rua que se tornou pesquisador no MIT e foi uma das primeiras pessoas a modelar uma rede neural artificial. Separe um byte de minutos do seu dia e venha conosco no quadro Uma Byta História!</br>
         </br>
         Confira o texto adaptado deste episódio <a class="regular-item" href="${notion_url}" onclick="gtag('event', 'Ver texto ep ${id}');" target="_blank">aqui</a>.</br>
         </br>
