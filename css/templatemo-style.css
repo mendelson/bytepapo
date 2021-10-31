@@ -82,6 +82,14 @@ footer {
   padding-top: 80px;
 }
 
+.tm-section-pad-top-below-carousel {
+  margin-top: -330px !important;
+}
+
+.tm-section-pad-top-below-last-carousel {
+  margin-top: -155px !important;
+}
+
 .tm-text-primary {
   color: #d27441; /* <===== ALTERAR AQUI A COR DOS TÍTULOS DAS SESSÕES!!!!! */
   /*color: #cf7342; */
