@@ -7,7 +7,7 @@ document.write(`
         </br>
         Confira o texto adaptado deste episódio <a class="regular-item" href="${notion_url}" onclick="gtag('event', 'Ver texto ep ${id}');" target="_blank">aqui</a>.</br>
         </br>
-        <iframe src="https://open.spotify.com/embed/episode/3IkCQibAV4oeqi1AwZQ040" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/episode/7m8VrU3y4sSGiRYuXQDwex?utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     </p>
     
     <hr id="line_1_${id}" class="description" />
