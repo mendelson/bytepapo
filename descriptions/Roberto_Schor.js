@@ -4,7 +4,7 @@ document.write(`
     <p id="${id}" class="description mb-4 tm-intro-text text-justify">
         Neste episódio, Roberto Schor mostra a verdadeira definição de "ser raçudo"! Sabia que um atleta MVP também se destaca no mundo corporativo? Coloque seu fone de ouvido, pegue um lanchinho leve e venha nessa viagem!</br>
         </br>
-        <iframe src="https://open.spotify.com/embed/episode/0Eb3T2eneY3qQIdtGQmMzi" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <iframe src="https://open.spotify.com/embed/episode/3aqNMqPrYHFMK65Ae4X49W" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     </p>
     
     <hr id="line_1_${id}" class="description" />
