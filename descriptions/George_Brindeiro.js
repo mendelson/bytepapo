@@ -4,7 +4,7 @@ document.write(`
     <p id="${id}" class="description mb-4 tm-intro-text text-justify">
         Neste episódio, George Brindeiro mostra que a vida é o que acontece enquanto a gente planeja! Com planos de se tornar engenheiro de carros autônomos, aconteceu de se tornar tech writer. Você deve estar se perguntando que profissão é essa, não é mesmo? Coloque seu fone de ouvido, pegue um lanchinho leve e venha nessa viagem!</br>
         </br>
-        <iframe src="https://open.spotify.com/embed/episode/3aqNMqPrYHFMK65Ae4X49W" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2Ag7SP5CKakXh9M9sy1lMK?utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     </p>
     
     <hr id="line_1_${id}" class="description" />
