@@ -4,7 +4,7 @@ document.write(`
     <p id="${id}" class="description mb-4 tm-intro-text text-justify">
         Neste episódio, Ádalo Reis conta um pouco da sua história desde o interior de Minas até entrar no mundo de vendas de software e hardware. E claro que também mostra sua paixão pela Harley-Davidson. Coloque seu fone de ouvido, pegue um lanchinho leve e venha nessa viagem!</br>
         </br>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/43KMIr75EqLi6tSOXLzBT3?utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6ZWrCo3W4Efat8363oGL3K?utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     </p>
     
     <hr id="line_1_${id}" class="description" />
